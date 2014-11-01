@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<Event>
+  <!--1XXX:System process message-->
+  <EventNode ID="1010" Type="Sys" Text="Start Data Retrieval..."/>
+  <EventNode ID="1020" Type="Sys" Text="Stopping and saving remaining data..."/>
+  <EventNode ID="1030" Type="Sys" Text="Stopped."/>
+  <EventNode ID="1040" Type="Sys" Text="Program termminated."/>
+  <EventNode ID="1050" Type="Sys" Text="Setting changed."/>
+  <EventNode ID="1100" Type="Error" Text="Unknow error."/>
+  <!--2XXX:Database connection message-->
+  <EventNode ID="2010" Type="Notification" Text="Connecting to database..."/>
+  <EventNode ID="2110" Type="Error" Text="Failed to connect to database."/>
+  <EventNode ID="2011" Type="Notification" Text="Connected to database."/>
+  <EventNode ID="2020" Type="Notification" Text="Inserting data..."/>
+  <EventNode ID="2120" Type="Error" Text="Failed to insert data."/>
+  <EventNode ID="2021" Type="Notification" Text="Data inserted."/>
+  <EventNode ID="2030" Type="Notification" Text="Updating data..."/>
+  <EventNode ID="2130" Type="Error" Text="Failed to update data."/>
+  <EventNode ID="2031" Type="Notification" Text="Data updated."/>
+  <EventNode ID="2040" Type="Notification" Text="Getting metadata from database..."/>
+  <EventNode ID="2140" Type="Error" Text="Failed to get metadata."/>
+  <EventNode ID="2041" Type="Notification" Text="Metadata received."/>
+  <EventNode ID="2050" Type="Notification" Text="Database disconnected."/>
+  <EventNode ID="2160" Type="Error" Text="Unable to refresh data grid."/>
+  <!--3XXX:Inrix host connection message-->
+  <EventNode ID="3010" Type="Notification" Text="Getting credential key..."/>
+  <EventNode ID="3110" Type="Error" Text="Failed to get credential key."/>
+  <EventNode ID="3011" Type="Notification" Text="Key authenticated."/>
+  <EventNode ID="3020" Type="Notification" Text="Requesting for data..."/>
+  <EventNode ID="3120" Type="Error" Text="Failed to get tmc data. (Refused by host)"/>
+  <EventNode ID="3021" Type="Notification" Text="Realtime data received."/>
+  <EventNode ID="3121" Type="Error" Text="Timeout on data receiving."/>
+  <!--4XXX:Parse/filter message-->
+  <EventNode ID="4010" Type="Notification" Text="Start parsing credential key..."/>
+  <EventNode ID="4110" Type="Error" Text="Failed to parse credential key."/>
+  <EventNode ID="4011" Type="Notification" Text="Key parsed successfully."/>
+  <EventNode ID="4020" Type="Notification" Text="Start filtering DC routes."/>
+  <EventNode ID="4120" Type="Error" Text="Failed to filter routes."/>
+  <EventNode ID="4021" Type="Notification" Text="Routes filtered successfully."/>
+  <EventNode ID="4130" Type="Error" Text="Invalid input data."/>
+  <EventNode ID="4040" Type="Notification" Text="Start parsing realtime data..."/>
+  <EventNode ID="4140" Type="Error" Text="Realtime data parsing failed."/>
+  <EventNode ID="4041" Type="Notification" Text="Realtime data parsed."/>
+</Event>
