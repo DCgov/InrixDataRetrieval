@@ -10,5 +10,5 @@ the local database settings, the updating cycle, log file path, and other parame
 All these parameters can be set by clicking File -> Settings.
 
 
-Author: Kevin Lu
+Author: Kevin Lu...
 Date: 2011
